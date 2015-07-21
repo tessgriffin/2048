@@ -1,6 +1,6 @@
 const assert = require('chai').assert;
 const Board  = require('../lib/board');
-const Tile   = require('../lib/tile')
+const Tile   = require('../lib/tile');
 
 describe('the board', function(){
 

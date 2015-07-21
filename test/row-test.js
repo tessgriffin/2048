@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 const Row    = require('../lib/row');
 const Tile   = require('../lib/tile');
-const _      = require('lodash')
+const _      = require('lodash');
 
 describe('row logic', function(){
 
