@@ -1,0 +1,151 @@
+body {
+  background: url("images/Turing-2048-background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 125px;
+}
+
+#navbar {
+  position: fixed;
+  height: 125px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background: #262626;
+  border-bottom: solid 4px #05c2d1;
+  z-index: 1;
+}
+
+#navbar img {
+  margin-top: 22px;
+  margin-left: 78px;
+  width: 237px;
+}
+
+#navbar h1 {
+  position: absolute;
+  top: -18px;
+  right: 78px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 400%;
+}
+
+#board {
+  border: 1px solid #05c2d1;
+  background-color: #D0D0D0;
+  opacity: 0.7;
+  position: absolute;
+  width: 500px;
+  height: 497px;
+  top: 150px;
+  right: calc(50% - 250px);
+  -webkit-box-shadow: 0px 0px 86px -13px #05c2d1;
+  -moz-box-shadow: 0px 0px 86px -13px #05c2d1;
+  box-shadow: 0px 0px 86px -13px #05c2d1;
+}
+
+.tile {
+  border: 2px solid #05c2d1;
+  width: 110px;
+  height: 110px;
+}
+
+#tile-0 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% + 126px);
+}
+
+#tile-1 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% + 4px);
+}
+
+#tile-2 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% - 118px);;
+}
+
+#tile-3 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% - 240px);;
+}
+
+#tile-4 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% + 126px);
+}
+
+#tile-5 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% + 4px);
+}
+
+#tile-6 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% - 118px);;
+}
+
+#tile-7 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% - 240px);;
+}
+
+#tile-8 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% + 126px);
+}
+
+#tile-9 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% + 4px);
+}
+
+#tile-10 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% - 118px);;
+}
+
+#tile-11 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% - 240px);;
+}
+
+#tile-12 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% + 126px);
+}
+
+#tile-13 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% + 4px);
+}
+
+#tile-14 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% - 118px);;
+}
+
+#tile-15 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% - 240px);;
+}
+
