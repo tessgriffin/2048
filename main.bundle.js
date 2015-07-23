@@ -46,11 +46,11 @@
 
 	'use strict';
 
-	var sayHello = function sayHello() {
-	  return console.log('Hello');
-	};
+	// var sayHello = function sayHello() {
+	//   return console.log('Hello');
+	// };
 
-	sayHello();
+	// sayHello();
 
 /***/ }
 /******/ ]);

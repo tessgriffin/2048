@@ -30,17 +30,17 @@ describe('the board', function(){
     var tile = board.updateTile(0, 0, 2);
 
     assert.equal(tile.num, 2);
-    assert.equal(tile.color, 'fce4ec');
+    assert.equal(tile.color, '#fce4ec');
 
     tile = board.updateTile(0, 0, 0);
 
     assert.equal(tile.num, 0);
-    assert.equal(tile.color, 'FFFFFF');
+    assert.equal(tile.color, '#FFFFFF');
 
     tile = board.updateTile(0, 0, 4);
 
     assert.equal(tile.num, 4);
-    assert.equal(tile.color, 'f8bbd0');
+    assert.equal(tile.color, '#f8bbd0');
   });
 
 });

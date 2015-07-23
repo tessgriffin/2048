@@ -153,4 +153,19 @@ describe('row logic', function(){
     assert.deepEqual(expected, rowNums);
   });
 
+  it('will update its colors', function(){
+    row[0].num   = 0;
+    row[1].num   = 8;
+    row[2].num   = 8;
+    row[3].num   = 8;
+    var newRow   = new Row(row).slideTiles().row;
+    var expected = ["#ff80ab", "#f48fb1", "#FFFFFF", "#FFFFFF"];
+    var rowColors  = [];
+    newRow.forEach(function(tile){
+      rowColors.push(tile.color); 
+    });
+    console.log(rowColors);
+    assert.deepEqual(expected, rowColors);
+  });
+
 });
