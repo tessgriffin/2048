@@ -30,6 +30,7 @@ body {
   right: 78px;
   color: white;
   font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-size: 400%;
 }
 
@@ -57,6 +58,7 @@ body {
   text-align: center;
   line-height: 110px;
   font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 400%;
   color: #FFF;
 }
