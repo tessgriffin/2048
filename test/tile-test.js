@@ -25,7 +25,14 @@ describe('tile', function(){
 
   it('has a color of FFFFFF when its value is 0', function(){
     var tile = new Tile();
-    assert.equal(tile.color, 'FFFFFF');
+    assert.equal(tile.color, '#FFFFFF');
+  });
+
+  it('can update its color based on its number', function(){
+    var tile = new Tile();
+    tile.num = 2;
+    tile.updateColor();
+    assert.equal(tile.color, "#fce4ec")
   });
 
 });
