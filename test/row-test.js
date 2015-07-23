@@ -55,13 +55,27 @@ describe('row logic', function(){
     assert.deepEqual(expected, rowNums);
   });
 
-  it('will combine like tiles', function(){
+  it('will combine like tiles, simple case', function(){
     row[0].num   = 8;
     row[1].num   = 8;
     row[2].num   = 0;
     row[3].num   = 0;
     var newRow   = new Row(row).combineTiles().row;
     var expected = [16, 0, 0, 0];
+    var rowNums  = [];
+    newRow.forEach(function(tile){
+      rowNums.push(tile.num); 
+    });
+    assert.deepEqual(expected, rowNums);
+  });
+
+  it('will combine like tiles, complex case', function(){
+    row[0].num   = 8;
+    row[1].num   = 8;
+    row[2].num   = 8;
+    row[3].num   = 8;
+    var newRow   = new Row(row).combineTiles().row;
+    var expected = [16, 0, 16, 0];
     var rowNums  = [];
     newRow.forEach(function(tile){
       rowNums.push(tile.num); 
