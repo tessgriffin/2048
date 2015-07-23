@@ -148,4 +148,50 @@ body {
   top: 374px;
   right: calc(50% - 240px);;
 }
+/*------------------------
+Tile Classes
+--------------------------*/
 
+.two {
+  background-color: #e57373;
+}
+
+.four {
+  background-color: #b71c1c;
+}
+
+.eight {
+  background-color: #ff8a65;
+}
+
+.sixteen {
+  background-color: #ff5722;
+}
+
+.thirty-two {
+  background-color: #fff176;
+}
+
+.sixty-four {
+  background-color: #ffc107;
+}
+
+.one-twenty-eight {
+  background-color: #81c784;
+}
+
+.two-fifty-six {
+  background-color: #1b5e20;
+}
+
+.five-twelve {
+  background-color: #81d4fa;
+}
+
+.one-twenty-four {
+  background-color: #01579b;
+}
+
+.twenty-fourty-eight {
+  background-color: #4527a0;
+}
