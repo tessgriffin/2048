@@ -10,7 +10,7 @@ describe('the game play', function(){
     var game      = new Game();
     game.addTile();
     var tileCount = _.flatten(game.board.grid).reduce(function(total, tile){
-      if(tile.num === 2){
+      if(tile.num === 2 || tile.num === 4){
         return total+1;
       } else {
         return total;
@@ -29,7 +29,7 @@ describe('the game play', function(){
     game.board.grid[0][0].num = 0;
     game.addTile();
     var tileCount = _.flatten(game.board.grid).reduce(function(total, tile){
-      if(tile.num === 2){
+      if(tile.num === 2 || tile.num === 4){
         return total+1;
       } else {
         return total;
@@ -42,7 +42,7 @@ describe('the game play', function(){
     var game      = new Game();
     game.initialize();
     var tileCount = _.flatten(game.board.grid).reduce(function(total, tile){
-      if(tile.num === 2){
+      if(tile.num === 2 || tile.num === 4){
         return total+1;
       } else {
         return total;

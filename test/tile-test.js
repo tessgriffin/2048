@@ -32,7 +32,7 @@ describe('tile', function(){
     var tile = new Tile();
     tile.num = 2;
     tile.updateColor();
-    assert.equal(tile.color, "#fce4ec")
+    assert.equal(tile.color, "#e57373")
   });
 
 });
