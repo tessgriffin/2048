@@ -92,6 +92,16 @@ body {
   line-height: 400px;
 }
 
+#game-modes {
+  position: absolute;
+  top: 655px;
+  left: calc(50% - 250px);
+}
+
+#game-modes h3 {
+  display: inline;
+}
+
 .tile {
   border: 2px solid #05c2d1;
   width: 110px;
