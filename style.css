@@ -34,7 +34,7 @@ body {
 }
 
 #board {
-  border: 2px solid #05c2d1;
+  border: 1px solid #05c2d1;
   background-color: #D0D0D0;
   opacity: 0.7;
   position: absolute;
@@ -42,9 +42,9 @@ body {
   height: 497px;
   top: 150px;
   right: calc(50% - 250px);
-  -webkit-box-shadow: 0px 0px 86px -13px rgba(230,30,223,1);
-  -moz-box-shadow: 0px 0px 86px -13px rgba(230,30,223,1);
-  box-shadow: 0px 0px 86px -13px rgba(230,30,223,1);
+  -webkit-box-shadow: 0px 0px 86px -13px #05c2d1;
+  -moz-box-shadow: 0px 0px 86px -13px #05c2d1;
+  box-shadow: 0px 0px 86px -13px #05c2d1;
 }
 
 .tile {
