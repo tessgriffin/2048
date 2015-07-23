@@ -27,11 +27,21 @@ body {
 #navbar h1 {
   position: absolute;
   top: -18px;
-  right: 78px;
+  right: 230px;
   color: white;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 400%;
+}
+
+#navbar h2 {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 150%;
 }
 
 #board {
@@ -47,6 +57,39 @@ body {
   -moz-box-shadow: 0px 0px 86px -13px #05c2d1;
   box-shadow: 0px 0px 86px -13px #05c2d1;
   border-radius: 5px;
+}
+
+#end-game-win {
+  border: 1px solid #05c2d1;
+  background-color: green;
+  opacity: 0.60;
+  position: absolute;
+  width: 500px;
+  height: 497px;
+  top: 150px;
+  right: calc(50% - 250px);
+  display: none;
+}
+
+#end-game-lose {
+  border: 1px solid #05c2d1;
+  background-color: red;
+  opacity: 0.60;
+  position: absolute;
+  width: 500px;
+  height: 497px;
+  top: 150px;
+  right: calc(50% - 250px);
+  display: none;
+}
+
+.end-message {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 400%;
+  text-align: center;
+  line-height: 400px;
 }
 
 .tile {
