@@ -10,7 +10,7 @@ describe('a turn', function(){
     game.board.grid[1][0].num = 2;
     game.takeTurn('left');
     var tileCount = _.flatten(game.board.grid).reduce(function(total, tile){
-      if(tile.num === 2){
+      if(tile.num === 2 || tile.num === 4){
         return total+1;
       } else {
         return total;

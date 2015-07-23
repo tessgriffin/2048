@@ -159,7 +159,7 @@ describe('row logic', function(){
     row[2].num   = 8;
     row[3].num   = 8;
     var newRow   = new Row(row).slideTiles().row;
-    var expected = ["#ff80ab", "#f48fb1", "#FFFFFF", "#FFFFFF"];
+    var expected = ['#ff5722', '#ff8a65', '#FFFFFF', '#FFFFFF'];
     var rowColors  = [];
     newRow.forEach(function(tile){
       rowColors.push(tile.color); 
