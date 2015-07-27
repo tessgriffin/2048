@@ -178,7 +178,6 @@ describe('row logic', function(){
     newRow.forEach(function(tile){
       rowColors.push(tile.color); 
     });
-    console.log(rowColors);
     assert.deepEqual(expected, rowColors);
   });
 
