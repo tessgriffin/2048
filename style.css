@@ -102,6 +102,21 @@ body {
   display: inline;
 }
 
+#game-modes {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+}
+
+#game-modes a {
+  text-decoration: none;
+}
+
+#game-modes a:hover{
+  color: #05c2d1;
+}
+
 .tile {
   border: 2px solid #05c2d1;
   width: 110px;
