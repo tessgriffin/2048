@@ -1,0 +1,279 @@
+body {
+  background: url("images/Turing-2048-background.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0 125px;
+}
+
+#navbar {
+  position: fixed;
+  height: 125px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background: #262626;
+  border-bottom: solid 4px #05c2d1;
+  z-index: 1;
+}
+
+#navbar img {
+  margin-top: 22px;
+  margin-left: 78px;
+  width: 237px;
+}
+
+#navbar h1 {
+  position: absolute;
+  top: -18px;
+  right: 230px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 400%;
+}
+
+#navbar h2 {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 150%;
+}
+
+#board {
+  border: 1px solid #05c2d1;
+  background-color: #D0D0D0;
+  opacity: 0.85;
+  position: absolute;
+  width: 500px;
+  height: 497px;
+  top: 150px;
+  right: calc(50% - 250px);
+  -webkit-box-shadow: 0px 0px 86px -13px #05c2d1;
+  -moz-box-shadow: 0px 0px 86px -13px #05c2d1;
+  box-shadow: 0px 0px 86px -13px #05c2d1;
+  border-radius: 5px;
+}
+
+#end-game-win {
+  border: 1px solid #05c2d1;
+  background-color: green;
+  opacity: 0.60;
+  position: absolute;
+  width: 500px;
+  height: 497px;
+  top: 150px;
+  right: calc(50% - 250px);
+  display: none;
+}
+
+#end-game-lose {
+  border: 1px solid #05c2d1;
+  background-color: red;
+  opacity: 0.60;
+  position: absolute;
+  width: 500px;
+  height: 497px;
+  top: 150px;
+  right: calc(50% - 250px);
+  display: none;
+}
+
+.end-message {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 400%;
+  text-align: center;
+  line-height: 400px;
+}
+
+#game-modes {
+  position: absolute;
+  top: 655px;
+  left: calc(50% - 250px);
+}
+
+#game-modes h3 {
+  display: inline;
+}
+
+#game-modes {
+  color: #05c2d1;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+}
+
+#game-modes a {
+  text-decoration: none;
+}
+
+#game-modes a:hover{
+  color: #05c2d1;
+}
+
+.tile {
+  border: 2px solid #05c2d1;
+  width: 110px;
+  height: 110px;
+  border-radius: 5px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 110px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 275%;
+  color: #FFF;
+}
+
+#tile-0 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% + 126px);
+}
+
+#tile-1 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% + 4px);
+}
+
+#tile-2 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% - 118px);;
+}
+
+#tile-3 {
+  position: absolute;
+  top: 11px;
+  right: calc(50% - 240px);;
+}
+
+#tile-4 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% + 126px);
+}
+
+#tile-5 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% + 4px);
+}
+
+#tile-6 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% - 118px);;
+}
+
+#tile-7 {
+  position: absolute;
+  top: 132px;
+  right: calc(50% - 240px);;
+}
+
+#tile-8 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% + 126px);
+}
+
+#tile-9 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% + 4px);
+}
+
+#tile-10 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% - 118px);;
+}
+
+#tile-11 {
+  position: absolute;
+  top: 253px;
+  right: calc(50% - 240px);;
+}
+
+#tile-12 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% + 126px);
+}
+
+#tile-13 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% + 4px);
+}
+
+#tile-14 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% - 118px);;
+}
+
+#tile-15 {
+  position: absolute;
+  top: 374px;
+  right: calc(50% - 240px);;
+}
+/*------------------------
+Tile Classes
+--------------------------*/
+
+.color-0 {
+  background-color: #ffffff;
+}
+
+.color-2 {
+  background-color: #e57373;
+}
+
+.color-4 {
+  background-color: #b71c1c;
+}
+
+.color-8 {
+  background-color: #ff8a65;
+}
+
+.color-16 {
+  background-color: #ff5722;
+}
+
+.color-32 {
+  background-color: #fff176;
+}
+
+.color-64 {
+  background-color: #ffc107;
+}
+
+.color-128 {
+  background-color: #81c784;
+}
+
+.color-256 {
+  background-color: #1b5e20;
+}
+
+.color-512 {
+  background-color: #81d4fa;
+}
+
+.color-1024 {
+  background-color: #01579b;
+}
+
+.color-2048 {
+  background-color: #4527a0;
+}
