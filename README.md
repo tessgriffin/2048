@@ -2,7 +2,7 @@
 
 ## Description
 
-Javascript version of the classic game 2048. The object of the game is to slide tiles on the grid and get the numbers to add up to 2048!
+JavaScript version of the classic game 2048. The object of the game is to slide tiles on the grid and get the numbers to add up to 2048!
 
 ![alt text](http://g.recordit.co/jeOXzI0Xhs.gif "2048 game in progress")
 
@@ -29,3 +29,5 @@ To build the static files:
 ```js
 npm run build
 ```
+
+Contributors: Tess Griffin and [Eric Dowty](https://github.com/eric-dowty)
